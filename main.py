@@ -29,15 +29,13 @@ def _sha256(path):
 def main():
     src = os.path.join(HERE, "entry.png")
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-    made_dir = not os.path.isdir(out_dir)
     os.makedirs(out_dir, exist_ok=True)
     dst = os.path.join(out_dir, "entry.png")
     shutil.copyfile(src, dst)
     if _sha256(dst) != _sha256(src):
         raise SystemExit("entry.png copy is not byte-identical")
     os.chmod(dst, 0o644)
-    if made_dir:
-        os.chmod(out_dir, 0o755)
+    os.chmod(out_dir, 0o755)
 
 
 if __name__ == "__main__":
