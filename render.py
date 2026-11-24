@@ -48,7 +48,7 @@ REGION = {  # name -> (label, colour) ; colour used in bar, card number, map pin
     "OC": ("OC", (140, 94, 10)),
     "WORLD": ("WORLD", (85, 85, 85)),
 }
-STATUS = {  # word -> (dot colour, label)
+STATUS = {  # word -> RGB tuple
     "CONFIRMED": (46, 110, 70),
     "REPORTED": (140, 94, 10),
     "CLAIM": (179, 64, 42),
@@ -200,7 +200,7 @@ def hline(draw, x0, x1, y, fill=RULE, width=1):
 
 def status_chip(draw, x, y, status, fnt):
     """Small dot + status word at (x, y); returns width used."""
-    col = STATUS[status][0]
+    col = STATUS[status]
     draw.ellipse([x, y + 2, x + 7, y + 9], fill=col)
     draw.text((x + 11, y), status, font=fnt, fill=col)
     return 11 + draw.textlength(status, font=fnt)
@@ -758,7 +758,7 @@ def build():
     for st, desc in [("CONFIRMED", "verified by 2+ sources"),
                      ("REPORTED", "single source"),
                      ("CLAIM", "one side's claim")]:
-        col = STATUS[st][0]
+        col = STATUS[st]
         d.ellipse([lx_, leg_y + 2, lx_ + 7, leg_y + 9], fill=col)
         text(d, (lx_ + 10, leg_y), st, SANS_B(10), col)
         w1 = d.textlength(st, font=SANS_B(10))
@@ -787,7 +787,7 @@ def build():
         lab = "· " + reg
         text(d, (ix + col_w - 34, yy), lab, SANS_B(10), colr)
         d.ellipse([ix + col_w - 8, yy + 2, ix + col_w - 1, yy + 9],
-                  fill=STATUS[status][0])
+                  fill=STATUS[status])
 
     # ---- DATE CHECK: its own box, separate from everything else
     dy0, dy1 = 978, 1010
