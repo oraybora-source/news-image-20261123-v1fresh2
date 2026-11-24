@@ -5,6 +5,10 @@ official statement; REPORTED = reported, single source; CLAIM = one side's
 claim, not confirmed. Full sources with dates: see the build notes
 (`sumber-V1fresh2.md`). Story 18 (BepiColombo) has no pin: it orbits Mercury.
 
+PUTARAN 2 (25 Nov 01:xx WIB): #14 replaced — Asia Power Index (primary
+source Lowy dated 22 Nov) -> China sentences official to death for
+leaking secrets (Baomiguan post Monday 23 Nov; Reuters/CNN/SCMP 23 Nov).
+
 ## Leads (equal width, full-sentence headlines)
 1. Ukraine claims it sank a Russian warship off Libya — BENGHAZI, LIBYA · CONFLICT · CLAIM · 7 naval drones
 2. Iran vows to fight the US blockade — STRAIT OF HORMUZ · CONFLICT · CLAIM · 1 drone down
@@ -23,7 +27,7 @@ claim, not confirmed. Full sources with dates: see the build notes
 ## Also on Monday (numbered as on the map)
 12. 'El Chapo Isidro' captured in Sinaloa — SINALOA, MEXICO · AM · CONFIRMED
 13. India gives $1.62bn aid to flood-hit Nepal — NEW DELHI, INDIA · AS · CONFIRMED
-14. Asia Power Index: India 3rd, US 78.9, China 73.6 — NEW DELHI, INDIA · AS · CONFIRMED
+14. China sentences official to death for leaking secrets — BEIJING, CHINA · AS · REPORTED
 15. India–New Zealand Test ends in draw — WELLINGTON, NEW ZEALAND · OC · CONFIRMED
 16. Mali beats Belgium 2–1, U17 World Cup — DOHA, QATAR · AF · CONFIRMED
 17. FIFA names Women's World Cup hosts 2031 & 2035 — ZURICH, SWITZERLAND · EU · CONFIRMED

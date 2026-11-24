@@ -4,6 +4,17 @@
 Drawn from scratch in this session with Pillow: flat geometric scenes,
 a numbered-pin world map, and typography. No network, no external assets,
 no timestamps. Deterministic: same input data -> same bytes.
+
+PUTARAN 2 (25 Nov 01:xx WIB, sesi utama, Gas Kevin 01:01 WIB):
+- #14 diganti: Asia Power Index (sumber primer Lowy 22 Nov, bukan 23 Nov)
+  -> China sentences official to death for spying (Baomiguan post Senin
+  23 Nov; Reuters/CNN/SCMP/Sowetan 23 Nov). Tempat BEIJING, AS, REPORTED.
+- Pin 14: Wellington (salah) -> Beijing (116.4, 39.9), offset (-16, 8).
+- Strip UTC 10:00 POWER INDEX -> 07:30 CUCUTA DRONE (#33, komunike polisi
+  ~02:30 COT = 07:30 UTC; laporan pers menyebut 02:15 = 07:15 UTC).
+- Masthead tetap "15 FIELDS": bidang research ikut pergi bersama #14,
+  markets masuk (#39) -> 15 bidang berbeda; masthead, data, taksonomi
+  kini sepakat di angka 15 (lihat sumber-V1fresh2.md).
 """
 import math
 import os
@@ -96,7 +107,7 @@ GRID = [
 LIST = [
     (12, "'El Chapo Isidro' captured in Sinaloa", "SINALOA", "AM", "CONFIRMED"),
     (13, "India gives $1.62bn aid to flood-hit Nepal", "NEW DELHI", "AS", "CONFIRMED"),
-    (14, "Asia Power Index: India 3rd, US 78.9, China 73.6", "NEW DELHI", "AS", "CONFIRMED"),
+    (14, "China sentences official to death for spying", "BEIJING", "AS", "REPORTED"),
     (15, "India–New Zealand Test ends in draw", "WELLINGTON", "OC", "CONFIRMED"),
     (16, "Mali beats Belgium 2–1, U17 World Cup", "DOHA", "AF", "CONFIRMED"),
     (17, "FIFA names Women's World Cup hosts 2031 & 2035", "ZURICH", "EU", "CONFIRMED"),
@@ -130,7 +141,7 @@ LIST = [
 UTC = [
     ("06:00", "153 DRONES", 5),
     ("07:00", "BENGHAZI CLAIM", 1),
-    ("10:00", "POWER INDEX", 14),
+    ("07:30", "CÚCUTA DRONE", 33),
     ("11:00", "VP PICKS", 10),
     ("13:30", "COP31 BACKLASH", 4),
     ("14:00", "HUANG RETURNS", 3),
@@ -153,7 +164,7 @@ PINS = {
     1: (19.7, 32.1, -8, -6), 2: (56.5, 26.5, 13, -11), 3: (-122.0, 37.4, 0, 0), 4: (30.7, 36.9, 0, -1),
     5: (30.5, 50.4, -20, -2), 6: (21.0, 52.2, 18, 6), 7: (4.35, 50.85, -20, 14), 8: (-77.0, 38.9, 2, -7),
     9: (116.4, 39.9, 0, 3), 10: (106.8, -6.2, -12, -10), 11: (106.3, -6.2, -18, 8), 12: (-107.2, 24.8, 0, 0),
-    13: (77.2, 28.6, 1, 1), 14: (174.8, -41.3, -16, 8), 15: (174.8, -41.3, -2, -12), 16: (51.5, 25.3, -15, 13),
+    13: (77.2, 28.6, 1, 1), 14: (116.4, 39.9, -16, 8), 15: (174.8, -41.3, -2, -12), 16: (51.5, 25.3, -15, 13),
     17: (8.54, 47.38, -8, 20), 19: (77.6, 13.0, 0, 0), 20: (-52.6, 5.2, 0, 0), 21: (13.4, 52.5, -4, -28),
     22: (127.0, 37.5, -16, -18), 23: (-77.0, 38.9, -18, -15), 24: (106.8, -6.2, 14, 10), 25: (-47.9, -15.8, 0, 0),
     26: (-77.0, 38.9, 18, -10), 27: (-0.13, 51.5, -22, -8), 28: (6.5, 5.5, 0, 0), 29: (19.7, 32.1, 18, 6),

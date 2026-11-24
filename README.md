@@ -34,7 +34,7 @@ network, no clock, no randomness anywhere in the pipeline.
   ribbon, UTC timeline, lead and grid cards with flat geometric
   illustrations, the polygon world map with 40 numbered pins, the
   30-brief list, and the DATE CHECK box.
-- `entry.png` — the rendered front page (1024×1024, 209 KiB).
+- `entry.png` — the rendered front page (1024×1024, 203 KiB).
 - `main.py` — the entrypoint: copies `entry.png` to `/output/entry.png`.
 - `STORIES.md` — the 41 stories, with region, status and the source
   each date was verified against.
